@@ -268,3 +268,11 @@
 //   console.log(rand);
 // };
 // gerRandomNumebr();
+
+// problem 21
+const names = ["ali", "zaidi", "sara", "amir", "pinger"];
+const newarr = [];
+const allname = names.map((name) => {
+  return name.slice(-2) === "er" ? newarr.push(name) : name;
+});
+console.log(newarr);
