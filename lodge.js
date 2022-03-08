@@ -270,9 +270,101 @@
 // gerRandomNumebr();
 
 // problem 21
-const names = ["ali", "zaidi", "sara", "amir", "pinger"];
-const newarr = [];
-const allname = names.map((name) => {
-  return name.slice(-2) === "er" ? newarr.push(name) : name;
-});
-console.log(newarr);
+// const names = ["ali", "zaidi", "sara", "amir", "pinger"];
+// const newarr = [];
+// const allname = names.map((name) => {
+//   return name.slice(-2) === "er" ? newarr.push(name) : name;
+// });
+// console.log(newarr);
+// problem 22
+
+// function alph(str) {
+//   // console.log(str.split("").reverse("").join(""));
+//   const revStr = "";
+//   for (let i = str.length; i >= 1; i--) {
+//     revStr = revStr + str[i];
+//   }
+//   return revStr;
+// }
+// const newarr = alph("websote");
+// console.log(newarr);
+
+// problem 23
+// const countCoins = (money, coins = [25, 10, 5, 2, 1]) => {
+//   const totalCoins = [];
+//   for (let i = 0; i < coins.length; i++) {
+//     const thisCoinsNum = Math.floor(money / coins[i]);
+//     // i=0  => 1
+
+//     for (let y = 0; y < thisCoinsNum; y++) {
+//       totalCoins.push(coins[i]);
+//       // totalCoins=25
+//     }
+//     money -= coins[i] * thisCoinsNum;
+//     // money=26-25*25
+//   }
+//   return totalCoins;
+// };
+// console.log(countCoins(26));
+// function convertCoins(money, coins = [25, 10, 5, 2, 1]) {
+// let coins = [25, 10, 5, 2, 1];
+// let result = [];
+// for (let i = 0; i < coins.length; i++) {
+//   while (money >= coins[i]) {
+//     result.push(coins[i]);
+//     money -= coins[i];
+//   }
+// }
+// return result;
+// let totalCoins = [];
+// let j = 0;
+// while (amount > 0) {
+//   if (amount >= coins[j]) {
+//     amount -= coins[j];
+//     totalCoins.push(coins[j]);
+//   }
+//   if (amount < coins[j]) {
+//     j++;
+//   }
+// }
+// return totalCoins;
+// }
+// console.log(convertCoins(86));
+// problem 24
+// const uniqueStr = (str) => {
+//   const stri = [...new Set(str.split(""))];
+//   console.log(stri);
+// };
+// uniqueStr("sdsffertrssdd");
+
+// Problem 26 some array method array of object
+// const data = [
+//   {
+//     employee: { name: "John", age: 30, city: "New York" },
+//   },
+//   {
+//     name: "ali",
+//     age: 30,
+//     city: "karachi",
+//   },
+//   {
+//     name: "raza",
+//     age: 30,
+//     city: "sindh",
+//     value: false,
+//   },
+//   {
+//     name: "zaidi",
+//     age: 30,
+//     city: "lahore",
+//     value: false,
+//   },
+// ];
+// // const newData = data.filter((data) => {
+// //   return data.name === "raza" && data.value;
+// // });
+// const dat = data.map((data) => ({
+//   ...data,
+//   totalvalu: 56,
+// }));
+// console.log(dat);
