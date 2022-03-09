@@ -368,3 +368,79 @@
 //   totalvalu: 56,
 // }));
 // console.log(dat);
+// problem 27
+// const data = ["aa", "bb", "cc"];
+// data.reverse("");
+// console.log(data);
+// console.log(data.map((data) => data.split(" ").reverse().join("")));
+
+// problem 28 ---------------------
+// function greet(name) {
+//   if (name === "johnny") {
+//     return name;
+//   } else if (name === "johnny") {
+//     return "Hello,my love!";
+//   }
+// }
+// const newJenny = greet("johnny");
+// console.log(newJenny);
+// problem 29--------------------
+// function inDivisible(n, x, y) {
+//   if (n % x == 0 && n % y == 0) {
+//     return true;
+//   } else return false;
+// }
+// const newDivisible = inDivisible(3, 3, 4);
+// console.log(newDivisible);
+// problem 25 make negative
+// function makeNagitive(num) {
+//   return num < 0 ? false : -num;
+// }
+// const newNef = makeNagitive(5);
+// console.log(newNef);
+
+// problem 26 find smallest integer
+
+// var array = [2, 3, 1, 9, 8];
+// var minvalue = array[0];
+// for (var i = 0; i < array.length; i++) {
+//   if (array[i] < minvalue) {
+//     minvalue = array[i];
+//   }
+// }
+// console.log(minvalue);
+// var array = [9, 3, 90, -9, 8];
+// var minvalue = array[0];
+// for (var i = 0; i < array.length; i++) {
+//   if (array[i] < minvalue) {
+//     minvalue = array[i];
+//   }
+// }
+// console.log(minvalue);
+// function smallestInteger() {
+//   const arr = [510, 10, 8, 9];
+//   var currentarr = arr[0];
+//   for (let i = 0; i <= arr.length; i++) {
+//     if (arr[i] < currentarr) {
+//       currentarr = arr[i];
+//     }
+//   }
+//   return currentarr;
+// }
+// const cyp = smallestInteger();
+// console.log(cyp);
+
+// problem 27 ==============
+
+// const addNumber = (num) => {
+//   let sum = 0;
+//   for (let i = 0; i <= num; i++) {
+//     sum += i;
+//   }
+//   return sum;
+// };
+// const newNumber = addNumber(1);
+// console.log(newNumber);
+// problem 28-----------
+const sta = "aliraza";
+console.log(sta.slice(1, -1));
