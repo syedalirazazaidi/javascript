@@ -442,5 +442,98 @@
 // const newNumber = addNumber(1);
 // console.log(newNumber);
 // problem 28-----------
-const sta = "aliraza";
-console.log(sta.slice(1, -1));
+// const sta = "aliraza";
+// console.log(sta.slice(1, -1));
+
+// problem 28/////
+
+// const str = "ali raza";
+// console.log(str.replace(/a/g, "ali"));
+
+// problem 29 find first consecutive number
+
+// const numarr = [1, 2, 3, 4];
+
+// for (let i = 0; i <= numarr.length; i++) {
+//   currenynum = numarr[i];
+//   nextnum = numarr[i + 1];
+//   if (currenynum + 1 !== nextnum) {
+//     console.log(nextnum);
+//   } else {
+//     console.log("first");
+//   }
+// }
+// console.log("null");
+
+// problem 30 ------==========
+
+// function arrfunc(arr) {
+// var newarr = [];
+// for (let i = 0; i <= arr.length; i++) {
+//   if (arr[i] % 2 === 0) {
+//     newarr.push(arr[i]);
+//   }
+// }
+// return newarr;
+// return arr.filter((val) => val % 2 === 0);
+// for (let i = 0; i <= arr.length; i++) {
+//   if (arr[i] % 2 === 0) {
+//     console.log(arr[i]);
+//   }
+// }
+// }
+
+// const arrfunction = arrfunc([3, 4, 8, 43, 67, 123]);
+// console.log(arrfunction);
+
+// problem 31 object function
+// const str = "aliraza";
+// // console.log(str.slice(0, 2));
+// const str1 = str.substring(0, 2);
+// console.log(str1);
+// console.log(str);
+
+// function makeObj(obj) {
+//   const newObj = Object.entries(obj).forEach((key) =>
+//     console.log(key[0]["name"])
+//   );
+// }
+// makeObj({ name: "ali", id: 1 });
+
+// problem 32
+// function capit(str) {
+//   const newStr = str
+//     .split("")
+//     .map((word, index) => {
+//       if (index % 2 === 0) {
+//         return word.toLowerCase();
+//       } else {
+//         return word.toUpperCase();
+//       }
+//     })
+//     .join("");
+//   return newStr;
+// }
+// const newarr = capit("aliraza");
+// console.log(newarr);
+// *********************************************XXXX
+// problem 33
+// given an array of integers reeturn indices of the two number such that they add up to a specific target
+// function twoSum(arr, nums) {
+//   for (let i = 0; i <= arr.length; i++) {
+//     for (let j = 0; j <= arr.length; j++) {
+//       if (arr[i] + arr[j] == nums) {
+//         return [i, j];
+//       }
+//     }
+//   }
+// }
+// const newTarget = twoSum([2, 7, 9, 15], 9);
+// console.log(newTarget);
+// problem 34 reverse intgers
+// const inte = 123456789;
+
+// console.log(typeof inte.toString());
+// const newSolution = inte.toString();
+// console.log(newSolution.split("").reverse().join(""));
+// problem 35====================
