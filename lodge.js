@@ -536,4 +536,27 @@
 // console.log(typeof inte.toString());
 // const newSolution = inte.toString();
 // console.log(newSolution.split("").reverse().join(""));
-// problem 35====================
+// problem 35==================== convert minute into second
+// function convert(minutes) {
+// 	const second=60
+// 	const converttosecond = minutes* second;
+// 	return converttosecond;
+
+// }
+//  problem 36 swap the number
+function largestSwap(num) {
+  const newnum = num.toString();
+  const checknumber = newnum.split("").reverse().join("");
+  if (checknumber < num) {
+    return true;
+  } else {
+    return false;
+  }
+}
+const newValue = largestSwap(14);
+const newVlue2 = largestSwap(53);
+const newVlue3 = largestSwap(99);
+
+console.log(newValue);
+console.log(newVlue2);
+console.log(newVlue3);
