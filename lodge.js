@@ -581,21 +581,67 @@
 // };
 // const newarr = getMax("35566660909000385");
 // console.log(newarr);
-// problem 39
-function valuesInObject(value) {
-  const character = value;
-  let obj = {};
-  for (let char of character) {
-    !obj[char] ? (obj[char] = 1) : obj[char]++;
-  }
-  return obj;
-}
-const newVal = valuesInObject("asdsadasd");
-console.log(newVal);
 
+// problem 39
+
+// function valuesInObject(value) {
+//   const character = value;
+//   let obj = {};
+//   for (let char of character) {
+//     !obj[char] ? (obj[char] = 1) : obj[char]++;
+//   }
+//   return obj;
+// }
+// const newVal = valuesInObject("asdsadasd");
+// console.log(newVal);
+// var myArray = [
+//   { name: "deepak", place: "bangalore" },
+//   { name: "chirag", place: "bangalore" },
+//   { name: "alok", place: "berhampur" },
+//   { name: "chandan", place: "mumbai" },
+// ];
+// var toRemove = [
+//   { name: "deepak", place: "bangalore" },
+//   { name: "alok", place: "berhampur" },
+// ];
+
+// myArray = myArray.filter(
+//   (ar) => !toRemove.find((rm) => rm.name === ar.name && ar.place === rm.place)
+// );
+// console.log(myArray);
+// var myArray = [
+//   { name: "deepak", place: "bangalore" },
+//   { name: "chirag", place: "bangalore" },
+//   { name: "alok", place: "berhampur" },
+//   { name: "chandan", place: "mumbai" },
+// ];
+// var toRemove = [
+//   { name: "deepak", place: "bangalore" },
+//   { name: "alok", place: "berhampur" },
+// ];
+
+// for (var i = myArray.length - 1; i >= 0; i--) {
+//   for (var j = 0; j < toRemove.length; j++) {
+//     if (myArray[i] && myArray[i].name === toRemove[j].name) {
+//       myArray.splice(i, 1);
+//     }
+//   }
+// }
+// console.log(myArray);
 // const obj = {
 //   name: "ali",
 //   id: 1,
 // };
 
 // console.log(obj["name"]);
+
+// function makearray(myArray, toRemove) {
+//   return myArray.filter((ar) => !toRemove.find((rm) => rm === ar));
+// }
+// const newArray = makearray([1, 10, 3, 2], [2, 3]);
+// console.log(newArray);
+
+// problem 40
+
+const arr = [{ name: "ali" }, { name: "zaidi" }, { name: "kashif" }];
+console.log(Object.keys(arr));
