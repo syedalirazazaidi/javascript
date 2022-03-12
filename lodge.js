@@ -544,19 +544,58 @@
 
 // }
 //  problem 36 swap the number
-function largestSwap(num) {
-  const newnum = num.toString();
-  const checknumber = newnum.split("").reverse().join("");
-  if (checknumber < num) {
-    return true;
-  } else {
-    return false;
-  }
-}
-const newValue = largestSwap(14);
-const newVlue2 = largestSwap(53);
-const newVlue3 = largestSwap(99);
+// function largestSwap(num) {
+//   const newnum = num.toString();
+//   const checknumber = newnum.split("").reverse().join("");
+//   if (checknumber < num) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// const newValue = largestSwap(14);
+// const newVlue2 = largestSwap(53);
+// const newVlue3 = largestSwap(99);
 
-console.log(newValue);
-console.log(newVlue2);
-console.log(newVlue3);
+// console.log(newValue);
+// console.log(newVlue2);
+// console.log(newVlue3);
+// problem 37 object to array
+
+// function toArray(obj) {
+//   return Object.entries(obj);
+// }
+// toArray({ a: 1, b: 2 });
+
+// problem 38
+// var getMax = function (str) {
+//   var max = 0,
+//     maxChar = "";
+//   str.split("").forEach(function (char) {
+//     if (str.split(char).length > max) {
+//       max = str.split(char).length;
+//       maxChar = char;
+//     }
+//   });
+//   return maxChar;
+// };
+// const newarr = getMax("35566660909000385");
+// console.log(newarr);
+// problem 39
+function valuesInObject(value) {
+  const character = value;
+  let obj = {};
+  for (let char of character) {
+    !obj[char] ? (obj[char] = 1) : obj[char]++;
+  }
+  return obj;
+}
+const newVal = valuesInObject("asdsadasd");
+console.log(newVal);
+
+// const obj = {
+//   name: "ali",
+//   id: 1,
+// };
+
+// console.log(obj["name"]);
