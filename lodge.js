@@ -680,4 +680,4 @@
 // }
 // const newper = persistance(89);
 // console.log(newper);
-// problem 42 REGULAR  EXPRESSION
+// problem 42 REGULAR  EXPRESSION check the expression
