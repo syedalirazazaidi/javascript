@@ -680,4 +680,41 @@
 // }
 // const newper = persistance(89);
 // console.log(newper);
-// problem 42 REGULAR  EXPRESSION check the expression
+// problem 42 FInd the character that appear the most
+// function findChar(chr) {
+// const splitchar = chr.split("");
+// const arr = [];
+// for (const element of splitchar) {
+//   console.log(element);
+// }
+// }
+// function findChar(str) {
+//   let obj = {};
+//   for (let char of str) !obj[char] ? (obj[char] = 1) : obj[char]++;
+
+//   let maxvalue = 0;
+//   let maxcharac = "";
+//   for (let char in obj) {
+//     if (obj[char] >= maxvalue) {
+//       maxvalue = obj[char];
+//       maxcharac = char;
+//     }
+//   }
+//   return {
+//     maxvalue,
+//     maxcharac,
+//   };
+// }
+// const newChar = findChar("aliraza zaidi");
+// console.log(newChar);
+
+// problem 43 chunked  array
+
+function chunkedArray(array, size) {
+  const chunkedArray = [];
+  for (var i = 0; i < array.length; i += size) {
+    chunkedArray.push(array.slice(i, i + size));
+  }
+  console.log(chunkedArray);
+}
+chunkedArray([3, 4, 1, 5, 2, 4, 34, 234, 42423, 1], 2);
