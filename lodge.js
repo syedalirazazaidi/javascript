@@ -710,11 +710,47 @@
 
 // problem 43 chunked  array
 
-function chunkedArray(array, size) {
-  const chunkedArray = [];
-  for (var i = 0; i < array.length; i += size) {
-    chunkedArray.push(array.slice(i, i + size));
-  }
-  console.log(chunkedArray);
-}
-chunkedArray([3, 4, 1, 5, 2, 4, 34, 234, 42423, 1], 2);
+// function chunkedArray(array, size) {
+//   const chunkedArnode = [];
+//   for (var i = 0; i < array.length; i += size) {
+//     chunkedArray.push(array.slice(i, i + size));
+//   }
+//   console.log(chunkedArray);
+// }
+// chunkedArray([3, 4, 1, 5, 2, 4, 34, 234, 42423, 1], 2);
+
+// -----------------------problem 44 MAP METHOD
+// return new array ,does not change the size of orignal array
+
+// const array1 = [1, 4, 9, 16];
+
+// const map1 = array1.map((x) => x + 2);
+
+// console.log(map1);
+// let users = [
+//   { firstName: "Susan", lastName: "Steward", age: 32 },
+//   { firstName: "Daniel", lastName: "Longbottom", age: 32 },
+//   { firstName: "Jacob", lastName: "Black", age: 32 },
+// ];
+
+// let userFullnames = users.map(function (element) {
+//   return `${element.firstName} ${element.lastName}`;
+// });
+
+// console.log(userFullnames);
+const myUsers = [
+  { name: "shark", likes: "ocean" },
+  { name: "turtle", likes: "pond" },
+  { name: "otter", likes: "fish biscuits" },
+];
+
+const usersByLikes = myUsers.map((item) => {
+  const container = {};
+
+  container[item.name] = item.likes;
+  container.age = item.name.length * 10;
+
+  return container;
+});
+
+console.log(usersByLikes);
