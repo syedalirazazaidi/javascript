@@ -642,6 +642,42 @@
 // console.log(newArray);
 
 // problem 40
+// function list(arr) {
+//   let newString = "";
+//   arr.forEach((values, index) => {
+//     if (index === arr.length - 1) {
+//       newString = newString + "&" + values.name;
+//     } else if (index === arr.length - 2) {
+//       newString = newString + values.name;
+//     } else if (arr.length === 1) {
+//       return arr[0].name;
+//     } else {
+//       newString = newString + values.name + ",";
+//     }
+//   });
+//   return newString;
+// }
+// const newarr = list([{ name: "ali" }, { name: "zaidi" }, { name: "kashif" }]);
+// console.log(newarr);
 
-const arr = [{ name: "ali" }, { name: "zaidi" }, { name: "kashif" }];
-console.log(Object.keys(arr));
+// problem 41 RECURRSION FUNCTION
+// numbers.reduce(function (previousValue, currentValue) {
+//   return previousValue + currentValue;
+// });
+// function persistance(numb) {
+//   if (numb < 10) {
+//     return 0;
+//   }
+//   const newnumb = numb.toString();
+//   const addnew = newnumb.split("");
+//   const addfew = addnew.reduce((acc, numb) => (acc *= numb));
+//   console.log(addfew);
+//   if (addfew >= 10) {
+//     return 1 + persistance(addfew);
+//   } else {
+//     return 1;
+//   }
+// }
+// const newper = persistance(89);
+// console.log(newper);
+// problem 42 REGULAR  EXPRESSION
