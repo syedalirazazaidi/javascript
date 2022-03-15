@@ -898,9 +898,9 @@
 
 // PROBLEM 49 DESTRUCTURE--------------
 
-const fruits = ["apple", "orange", "mango"];
-const vegetable = ["onion", "tomatto", "chilli"];
-const addall = [...fruits, ...vegetable];
-const [apple] = fruits;
-// console.log(addall);
-console.log(fruits);
+// const fruits = ["apple", "orange", "mango"];
+// const vegetable = ["onion", "tomatto", "chilli"];
+// const addall = [...fruits, ...vegetable];
+// const [apple] = fruits;
+// // console.log(addall);
+// console.log(fruits);
