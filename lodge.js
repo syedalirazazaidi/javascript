@@ -738,19 +738,119 @@
 // });
 
 // console.log(userFullnames);
-const myUsers = [
-  { name: "shark", likes: "ocean" },
-  { name: "turtle", likes: "pond" },
-  { name: "otter", likes: "fish biscuits" },
-];
+// const myUsers = [
+//   { name: "shark", likes: "ocean" },
+//   { name: "turtle", likes: "pond" },
+//   { name: "otter", likes: "fish biscuits" },
+// ];
 
-const usersByLikes = myUsers.map((item) => {
-  const container = {};
+// const usersByLikes = myUsers.map((item) => {
+//   const container = {};
 
-  container[item.name] = item.likes;
-  container.age = item.name.length * 10;
+//   container[item.name] = item.likes;
+//   container.age = item.name.length * 10;
 
-  return container;
-});
+//   return container;
+// });
 
-console.log(usersByLikes);
+// console.log(usersByLikes);
+
+// -----------PROBLEM 45 GET UNIQUE VALUE---------
+// let uniqueArray = [...new Set([5, 5, 1, 2, 2, 2, 4, 2])];
+// console.log(uniqueArray);
+// const data = [
+//   { group: "A", name: "SD" },
+//   { group: "B", name: "FI" },
+//   { group: "A", name: "FI" },
+//   { group: "B", name: "CO" },
+// ];
+// const unique = ["all", ...new Set(data.map((item) => item.name))];
+// console.log(unique);
+
+// -----------PROBLEM 46 Dynamic Object Keys---------
+// function isPalindrome(s) {
+//   //var rev = s.replace(/\s/g,"").split('').reverse().join('');  //to remove space
+//   var rev = s.split("").reverse().join("");
+//   return s == rev;
+// }
+
+// function longestPalind(s) {
+//   var maxp_length = 0,
+//     maxp = "";
+//   for (var i = 0; i < s.length; i++) {
+//     var subs = s.substr(i, s.length);
+//     if (subs.length <= maxp_length) break; //Stop Loop for smaller strings
+//     for (var j = subs.length; j >= 0; j--) {
+//       var sub_subs = subs.substr(0, j);
+//       if (sub_subs.length <= maxp_length) break; // Stop loop for smaller strings
+//       if (isPalindrome(sub_subs)) {
+//         maxp_length = sub_subs.length;
+//         maxp = sub_subs;
+//       }
+//     }
+//   }
+//   return maxp;
+// }
+// const newpari = isPalindrome("eye");
+// console.log(newpari);
+
+// const objects = {};
+
+// for (let x = 0; x < 5; x++) {
+//   objects[x] = {
+//     name: "foo",
+//   };
+// }
+
+// console.log(Object.values(objects));
+// function is_Palindrome(str1) {
+//   var rev = str1.split("").reverse().join("");
+//   return str1 == rev;
+// }
+
+// function longest_palindrome(str1) {
+//   var max_length = 0,
+//     maxp = "";
+//   for (var i = 0; i < str1.length; i++) {
+//     var subs = str1.substr(i, str1.length);
+//     for (var j = subs.length; j >= 0; j--) {
+//       var sub_subs_str = subs.substr(0, j);
+//       if (sub_subs_str.length <= 1) continue;
+//       if (is_Palindrome(sub_subs_str)) {
+//         if (sub_subs_str.length > max_length) {
+//           max_length = sub_subs_str.length;
+//           maxp = sub_subs_str;
+//         }
+//       }
+//     }
+//   }
+
+//   return maxp;
+// }
+// console.log(longest_palindrome("takmadamtbi mmadamm"));
+
+// console.log(
+//   longest_palindrome("HYTBCABADEFGHABCDEDCBAGHTFYW12345678987654321ZWETYGDE")
+
+// );
+
+// -----------PROBLEM 47 FILTER AND FIND METHOD---------
+
+// let cities = [
+//   { name: "Los Angeles", population: 3792621 },
+//   { name: "Chicago", population: 8175133 },
+//   { name: "Chicago", population: 2695598 },
+//   { name: "Houston", population: 2099451 },
+//   { name: "Philadelphia", population: 1526006 },
+// ];
+
+// // let bigCities = cities.filter(function (e) {
+// //   return e.population === 2695598;
+// // });
+
+// let bigCities = cities.find(function (e) {
+//   return e.population > 300000;
+// });
+// console.log(bigCities);
+
+// -----------PROBLEM 48 REDUCE METHOD---------
