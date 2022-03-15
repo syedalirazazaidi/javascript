@@ -854,3 +854,53 @@
 // console.log(bigCities);
 
 // -----------PROBLEM 48 REDUCE METHOD---------
+// let shoppingCart = [
+//   {
+//     product: "phone",
+//     qty: 2,
+//     price: 500,
+//   },
+//   {
+//     product: "Screen Protector",
+//     qty: 2,
+//     price: 10,
+//   },
+//   {
+//     product: "Memory Card",
+//     qty: 2,
+//     price: 20,
+//   },
+//   {
+//     product: "SSD Card",
+//     qty: 4,
+//     price: 320,
+//   },
+// ];
+// const newshoppingCart = shoppingCart.reduce(
+//   (total, currentItem) => {
+//     const { qty, price } = currentItem;
+//     total.cartItem += price * qty;
+//     total.totalItem += qty;
+//     return total;
+//   },
+//   {
+//     totalItem: 0,
+//     cartItem: 0,
+//   }
+// );
+// console.log(newshoppingCart);
+// const obj = {
+//   a: 6,
+//   b: 5,
+//   c: 5,
+// };
+// console.log(Object.values(obj).reduce((a, b) => a * b));
+
+// PROBLEM 49 DESTRUCTURE--------------
+
+const fruits = ["apple", "orange", "mango"];
+const vegetable = ["onion", "tomatto", "chilli"];
+const addall = [...fruits, ...vegetable];
+const [apple] = fruits;
+// console.log(addall);
+console.log(fruits);
