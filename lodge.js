@@ -911,12 +911,12 @@
 
 // PROBLEM 51
 // Print the odd numbers less than 100
-for (let i = 1; i < 100; i += 2) {
-  console.log(i);
-  //   if (i % 2 !== 0) {
-  //     console.log(i);
-  //   }
-}
+// for (let i = 1; i < 100; i += 2) {
+//   console.log(i);
+//   //   if (i % 2 !== 0) {
+//   //     console.log(i);
+//   //   }
+// }
 
 // PROBLEM 52
 // Print the multiplication table with 7
@@ -925,8 +925,145 @@ for (let i = 1; i < 100; i += 2) {
 // }
 // PROBLEM 53
 // Print all the multiplication tables with numbers from 1 to 10
-for (let i = 1; i <= 10; i++) {
-  for (let j = 1; j <= 10; j++) {
-    console.log(`${i}*${j} =${j * i}`);
+// for (let i = 1; i <= 10; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     console.log(`${i}*${j} =${j * i}`);
+//   }
+// }
+
+// PROBLEM 54
+// Calculate the sum of numbers from 1 to 10
+// 1+2+3+4+5+6+7+8+9+10
+// var j = 0;
+// for (let i = 1; i <= 10; i++) {
+//   console.log((j += i));
+// }
+
+// PROBLEM 55
+// Calculate 10!
+// var j = 1;
+// for (let i = 1; i <= 3; i++) {
+//   j *= i;
+// }
+// console.log(j);
+
+// PROBLEM 56
+// Calculate the sum of even numbers greater than 10 and less than 30
+// var j = 0;
+// for (let i = 10; i <= 30; i += 2) {
+//   j += i;
+// }
+// console.log(j);
+
+// PROBLEM 57
+// Create a function that will convert from Celsius to Fahrenheit
+// function convertFerhan(cel) {
+//   const newCel = (cel * 9) / 5 + 32;
+
+//   console.log(`${newCel}°C `);
+// }
+// convertFerhan(32);
+// PROBLEM 57
+// Create a function that will convert from Fahrenheit to Celsius
+// function convertCelcius(cel) {
+//   const newFah = ((cel - 32) * 5) / 9;
+
+//   console.log(`${newFah}°F `);
+// }
+// convertCelcius(89);
+
+// / PROBLEM 58
+// Calculate the sum of numbers in an array of numbers
+// const arr = [2, 3, 4, -1];
+// var sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// console.log(sum);
+
+// PROBLEM 59
+
+// Calculate the average of the numbers in an array of numbers
+// const arr = [2, 3, 4, -1];
+// var sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum += arr[i];
+// }
+// const average = sum / arr.length;
+// console.log(sum);
+// console.log(average);
+
+// PROBLEM 59
+// Create a function that receives an array of numbers as argument and returns an
+// array containing only the positive numbers
+
+// function posiNumber(arr) {
+//   var arr2 = [];
+//   for (let i = 0; i <= arr.length; i++) {
+//     if (arr[i] <= 0) {
+//       arr2.push(arr[i]);
+//     }
+//   }
+//   console.log(arr2);
+// }
+// posiNumber([3, -4, 4, 2, -8, 0]);
+
+// PROBLEM 59
+// Find the maximum number in an array of numbers
+// function maxNumber(arr) {
+//   var maxnum = arr[0];
+//   for (let i = 0; i <= arr.length; i++) {
+//     if (maxnum <= arr[i]) {
+//       maxnum = arr[i];
+//     }
+//   }
+//   console.log(maxnum);
+// }
+// maxNumber([3, -4, 4, 2, 8, 10, 10]);
+
+// PROBLEM 60
+// Print the first 10 Fibonacci numbers without recursion
+// var i;
+// var fib = []; // Initialize array!
+
+// fib[0] = 0;
+// fib[1] = 1;
+// for (var i = 2; i <= 6; i++) {
+//   fib[i] = fib[i - 2] + fib[i - 1];
+// }
+// console.log(fib);
+
+// PROBLEM 61
+// Create a function that will find the nth Fibonacci number using recursion
+// function fibon(n) {
+//   var fab = [];
+//   fab[0] = 0;
+//   fab[1] = 1;
+//   for (var i = 2; i <= n; i++) {
+//     fab[i] = fab[i - 2] + fab[i - 1];
+//     console.log(fab[i]);
+//   }
+// }
+// fibon(100);
+// PROBLEM 62
+//  sum of the positive number
+// function sumPositive(pos) {
+//   const cntStr = pos.toString();
+//   var sum = 0;
+//   for (var char of cntStr) {
+//     sum += parseInt(char);
+//   }
+//   console.log(sum);
+// }
+// sumPositive(12345);
+
+// PROBLEM 63
+// Print the first 100 prime numbers
+const pri = 10;
+for (let i = 1; i <= pri; i++) {
+  if (pri % i == 0) {
+    console.log(false, "", i);
+  } else {
   }
 }
+console.log(true, "");
