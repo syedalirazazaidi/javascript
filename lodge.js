@@ -904,3 +904,29 @@
 // const [apple] = fruits;
 // // console.log(addall);
 // console.log(fruits);
+
+// PROBLEM 50
+// Print numbers from 1 to 10
+// for (let i = 0; i <= 10; i++) console.log(i);
+
+// PROBLEM 51
+// Print the odd numbers less than 100
+for (let i = 1; i < 100; i += 2) {
+  console.log(i);
+  //   if (i % 2 !== 0) {
+  //     console.log(i);
+  //   }
+}
+
+// PROBLEM 52
+// Print the multiplication table with 7
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`7 * ${i}=${7 * i}`);
+// }
+// PROBLEM 53
+// Print all the multiplication tables with numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+  for (let j = 1; j <= 10; j++) {
+    console.log(`${i}*${j} =${j * i}`);
+  }
+}
