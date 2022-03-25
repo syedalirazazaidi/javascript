@@ -1059,11 +1059,167 @@
 
 // PROBLEM 63
 // Print the first 100 prime numbers
-const pri = 10;
-for (let i = 1; i <= pri; i++) {
-  if (pri % i == 0) {
-    console.log(false, "", i);
-  } else {
-  }
-}
-console.log(true, "");
+// const pri = 10;
+// for (let i = 1; i <= pri; i++) {
+//   if (pri % i == 0) {
+//     console.log(false, "", i);
+//   } else {
+//   }
+// }
+// console.log(true, "");
+
+// PROBLEM 64
+// printPrimes(100);
+
+// // Function prints the first nPrimes numbers
+// function printPrimes(nPrimes) {
+//   let n = 0;
+//   let i = 2;
+
+//   while (n < nPrimes) {
+//     if (isPrime(i)) {
+//       console.log(n, " --> ", i);
+//       n++;
+//     }
+
+//     i++;
+//   }
+// }
+
+// // Returns true if a number is prime
+// function isPrime(n) {
+//   if (n < 2) return false;
+
+//   if (n == 2) return true;
+
+//   let maxDiv = Math.sqrt(n);
+
+//   for (let i = 2; i <= maxDiv; i++) {
+//     if (n % i == 0) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// PROBLEM 65
+// getPrimes(10, 100);
+
+// function getPrimes(nPrimes, startAt) {
+//   let ar = [];
+
+//   let i = startAt;
+
+//   while (ar.length < nPrimes) {
+//     if (isPrime(i)) {
+//       ar.push(i);
+//     }
+
+//     i++;
+//   }
+//   console.log(ar);
+//   return ar;
+// }
+
+// Returns true if a number is prime
+// function isPrime(n) {
+//   if (n < 2) return false;
+
+//   if (n == 2) return true;
+
+//   let maxDiv = Math.sqrt(n);
+
+//   for (let i = 2; i <= maxDiv; i++) {
+//     if (n % i == 0) {
+//       return false;
+//     }
+//   }
+
+//   return true;
+// }
+
+// PROBLEM 66
+// Rotate an array to the left 1 position
+
+// let ar = [1, 2, 3];
+// rotateLeft(ar);
+// console.log(ar);
+
+// function rotateLeft(ar) {
+//   let first = ar.shift();
+//   console.log(first, " shift");
+//   ar.push(first);
+// }
+
+// PROBLEM 67
+// Rotate an array to the RIGHT 1 position
+
+// function rotateLeft() {
+//   arr = [3, 4, 5];
+//   //     [ 5, 3, 4]
+//   const last = arr.pop();
+//   console.log(last);
+//   arr.unshift(last);
+//   console.log(arr);
+// }
+// rotateLeft();
+// PROBLEM 68
+// Reverse an array
+// function reverseArray() {
+//   arr = [3, 4, 5];
+//   //     [ 5, 4, 3]
+//   arr.reverse();
+//   console.log(arr);
+// }
+// reverseArray();
+
+// PROBLEM 69
+// Reverse an string
+// function reverseArray() {
+//   arr = "abc";
+//   //    cba
+//   console.log(arr.split("").reverse().join(""));
+// }
+// reverseArray();
+// PROBLEM 70
+
+// Create a function that will merge
+// two arrays and return the result as
+// a new array
+
+// var varA = [1, 2, 3];
+// var arrB = [4, 5, 6];
+// console.log([...varA, ...arrB]);
+
+// PROBLEM 70
+
+// Create a function that will receive
+// two arrays of numbers as arguments
+// and return an array composed of
+// all the numbers that are either
+// in the first array or second array
+// but not in both
+
+// let ar1 = [1, 2, 3, 10, 5, 3, 14];
+// let ar2 = [-1, -4, 5, 6, 14];
+
+// let ar = mergeLeft(ar1, ar2);
+// console.log(ar);
+
+// function mergeLeft(ar1, ar2) {
+//   let ar = [];
+
+//   for (let el of ar1) {
+//     if (!ar2.includes(el)) {
+//       ar.push(el);
+//     }
+//   }
+//   for (let el of ar2) {
+//     if (!ar1.includes(el)) {
+//       ar.push(el);
+//     }
+//   }
+
+//   return ar;
+// }
