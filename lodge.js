@@ -1223,3 +1223,38 @@
 
 //   return ar;
 // }
+
+// PROBLEM 71
+
+// Create a function that will receive an array of
+// numbers as argument and will return a new
+// array with distinct elements
+
+// function arrOfNumber(arr) {
+//   const newArr = [...new Set(arr)];
+//   console.log(newArr);
+// }
+// arrOfNumber([1, 2, -2, 4, 4, 4, 5]);
+
+// PROBLEM 72
+// : Calculate the sum of first 100 prime numbers
+
+function sumPrimes(num) {
+  let sum = 0;
+  const isPrime = (n) => {
+    for (let i = 2; i < n; i++) if (n % i === 0) return false;
+    return n !== 1;
+  };
+  for (i = 2; i <= num; i++) {
+    if (isPrime(i)) {
+      sum += i;
+      console.log(i);
+      console.log(isPrime(i));
+    }
+  }
+  console.log(sum);
+  return sum;
+}
+
+// test here
+sumPrimes(10);
