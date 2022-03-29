@@ -1239,22 +1239,35 @@
 // PROBLEM 72
 // : Calculate the sum of first 100 prime numbers
 
-function sumPrimes(num) {
-  let sum = 0;
-  const isPrime = (n) => {
-    for (let i = 2; i < n; i++) if (n % i === 0) return false;
-    return n !== 1;
-  };
-  for (i = 2; i <= num; i++) {
-    if (isPrime(i)) {
-      sum += i;
-      console.log(i);
-      console.log(isPrime(i));
-    }
-  }
-  console.log(sum);
-  return sum;
-}
+// function sumPrimes(num) {
+//   let sum = 0;
+//   const isPrime = (n) => {
+//     for (let i = 2; i < n; i++) if (n % i === 0) return false;
+//     return n !== 1;
+//   };
+//   for (i = 2; i <= num; i++) {
+//     if (isPrime(i)) {
+//       sum += i;
+//       console.log(i);
+//       console.log(isPrime(i));
+//     }
+//   }
+//   console.log(sum);
+//   return sum;
+// }
 
-// test here
-sumPrimes(10);
+// // test here
+// sumPrimes(10);
+
+// const arr = [3, 6, 7];
+// const arrr = arr.map((ar) => ar + 2);
+// console.log(arrr);
+// console.log(arr);
+// const arr = [3, 6, 7];
+// const arrr = arr.forEach((ar) => console.log(ar));
+// console.log(arrr);
+// console.log(arr);
+
+let val = "ali";
+val = "raza";
+console.log(val);
