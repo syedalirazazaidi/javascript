@@ -1268,6 +1268,174 @@
 // console.log(arrr);
 // console.log(arr);
 
-let val = "ali";
-val = "raza";
-console.log(val);
+// let val = "ali";
+// val = "raza";
+// console.log(val);
+
+// for (var i = 1; i <= 5; i++) {
+//   console.log(i, "inner");
+// }
+// console.log(i, "outer");
+// function greeting() {
+//   let message = "Hi";
+
+//   function sayHi() {
+//     console.log(message);
+//   }
+
+//   sayHi();
+// }
+
+// function myFunction(a) {
+//   var newarr = "";
+//   for (let i = 0; i < a.length / 2; i++) {
+//     newarr += a[i];
+//   }
+//   console.log(newarr);
+// }
+
+// myFunction("abcdefgh");
+
+// function myFunction(a, n) {
+//   console.log(a[n - 1]);
+// }
+
+// myFunction([1, 2, 3, 4, 5], 3);
+
+// function myFunction(a, b) {
+//   if (a === b) {
+//     console.log(true);
+//   } else {
+//     console.log(false);
+//   }
+// }
+// myFunction(1, "1");
+// function myFunction(a) {
+//   let person = {
+//     key: a,
+//   };
+
+//   console.log(Object.keys(JSON.stringify(person)));
+// }
+// myFunction("b");
+// const json = '{ "fruit": "pineapple", "fingers": 10 }';
+// const obj = JSON.parse(json);
+// console.log(obj.fruit, obj.fingers);
+// function myFunction(a) {
+//   console.log(a.slice(0, a.length - 3));
+// }
+// myFunction("abcdefg");
+// function myFunction(arr) {
+//   console.log(arr.sort());
+// }
+
+// myFunction(["b", "c", "d", "a"]);
+
+// function myFunction(a) {
+//   console.log(a.slice(3, a.length));
+// }
+// myFunction("1234");
+// function myFunction(a) {
+//   console.log(a.slice(-3));
+// }
+// myFunction([1, 2, 3, 4]);
+// function myFunction(a) {
+//   var count = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] < 0) {
+//       count++;
+//     }
+//   }
+//   console.log(count);
+// }
+// myFunction([1, -2, 2, -4]);
+
+// function myFunction(a, b) {
+//   console.log(a / 100) * 50;
+// }
+// myFunction(100, 50);
+// function myFunction(obj, b) {
+//   var newObj = Object.keys(obj == b) && obj[b];
+//   console.log(newObj);
+// for (var key in obj) {
+//   key == b ? obj["country"] : obj["continent"];
+//   console.log(`${key}: ${obj[key]}`);
+//   // key == key ? obj[key] : "";
+//   if (key == keys) {
+//     console.log(obj[key], "ko");
+//   }
+// }
+// console.log(key);
+// }
+// myFunction({ country: "Sweden", continent: "Europe" }, "country");
+
+// function myFunction(set, val) {
+//   console.log(set);
+// }
+// myFunction(new Set([1, 2, 3]), 2);
+
+// function myFunction(a, b) {
+//   myObj = { [a]: b };
+//   console.log(myObj);
+// }
+// myFunction("z", "x");
+// function myFunction(a, b) {
+//   var newarr = [];
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] !== b) {
+//       newarr.push(a[i]);
+//     }
+//   }
+//   return newarr;
+// }
+// myFunction([false, "2", 1], false);
+
+// function myFunction(a, b) {
+//   var result = {};
+//   a.forEach((key, i) => (result[key] = b[i]));
+//   console.log(result);
+// }
+// myFunction(["w", "x", "y", "z"], [10, 9, 5, 2]);
+// function myFunction(a, n) {
+//   console.log(a.slice(-n));
+// }
+// myFunction([1, 2, 3, 4, 5, 6, 7, 8], 3);
+// function myFunction(a, b, c, d, e, f) {
+//   z = a + b - c;
+
+//   y = z * d;
+
+//   g = y / e;
+//   console.log(Math.pow(g, f));
+// }
+// myFunction(6, 5, 4, 3, 2, 1);
+// function myFunction(a) {
+//   newcal = Object.values(a);
+
+//   sum = newcal.reduce((a, b) => a + b, 0);
+//   console.log(sum);
+// }
+// myFunction({ a: 1, b: 2, c: 3 });
+// function myFunction(a, b) {
+//   console.log(a + b);
+// }
+// myFunction(" think, therefore I am", "I");
+// let text = "Hello world, welcome to the universe.";
+// let result = text.includes("world");
+// console.log(result);
+// function myFunction(a) {
+//   console.log(a % 2 == 0 ? true : false);
+// }
+// myFunction(-4);
+// function myFunction(set, val) {
+//   console.log(set.delete(val));
+// console.log(set);
+// var newval = [...set];
+// newarr = [];
+// // console.log(newval.indexOf(val));
+// for (let i = 0; i < newval.length; i++) {
+//   newval[i] !== val && newarr.remove(val);
+// }
+// console.log(newarr);
+// }
+// myFunction(new Set([1, 2, 3]), 4);
