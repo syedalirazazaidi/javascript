@@ -1439,3 +1439,97 @@
 // console.log(newarr);
 // }
 // myFunction(new Set([1, 2, 3]), 4);
+
+// function myFunction(set, val) {
+//   set.forEach((point) => {
+//     if (point === val) {
+//       set.delete(point);
+//     }
+//   });
+//   console.log(set, "set1");
+
+// }
+// myFunction(new Set([1, 2, 3]), 4);
+
+// const set1 = new Set();
+// set1.add({ x: 10, y: 20 }).add({ x: 20, y: 30 });
+
+// // Delete any point with `x > 10`.
+// set1.forEach((point) => {
+//   if (point.x > 10) {
+//     set1.delete(point);
+//   }
+// });
+
+// console.log(set1);
+
+// function myFunction(set, val) {
+//   set.delete(val);
+//   console.log([...set]);
+// }
+// myFunction(new Set([1, 2, 3]), 1);
+// myFunction(new Set("12345"), "3");
+// myFunction(new Set([1, 2, 3]), 4);
+// const set = new Set(["a", "b"]);
+// console.log(set);
+// const values = set.values();
+// console.log(values);
+// const array = Array.from(values);
+// console.log(array);
+
+// const set1 = new Set([{ id: 1 }, { id: 2 }]);
+
+// console.log(set1); // 👉️ {{id: 1}, {id: 2}}
+
+// set1.forEach((obj) => {
+//   if (obj.id === 2) {
+//     set1.delete(obj);
+//   }
+// });
+
+// console.log([...set1]);
+
+// function myFunction(set, val) {
+//   console.log(set);
+//   set.forEach((obj) => {
+//     if (obj === val) {
+//       set.delete(obj);
+//     }
+//   });
+//   return set;
+// }
+// console.log(myFunction(new Set([1, 2, 3]), 1));
+// function myFunction(a, b, c) {
+//   // const newval = new Set(a, b, c);
+//   // console.log(newval);
+//   var set1 = new Set();
+
+//   set1.add(a);
+
+//   set1.add(b);
+
+//   set1.add(c);
+
+//   set1;
+// }
+// myFunction(1, "b", 3);
+function myFunction(obj) {
+  // console.log(obj.hasOwnProperty("b")); // true
+  // delete obj.b;
+  // console.log(obj.hasOwnProperty("b"));
+  // console.log(obj);
+
+  const { a, ...rest } = obj;
+  console.log(rest);
+
+  // for (const key in obj) {
+  //   console.log(key === "b");
+  //   if (key !== "b") {
+  //     console.log("hi");
+  //   }
+  // if (Object.hasOwnProperty.call(obj, key)) {
+  //   var element = obj[key];
+  // }
+  // console.log(element);
+}
+myFunction({ a: 1, b: 7, c: 3 });
