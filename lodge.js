@@ -1532,4 +1532,43 @@ function myFunction(obj) {
   // }
   // console.log(element);
 }
-myFunction({ a: 1, b: 7, c: 3 });
+// myFunction({ a: 1, b: 7, c: 3 });
+// function myFunction(a, b) {
+//   console.log(a.getTime() === b.getTime());
+// }
+// myFunction(new Date("2001/01/01 08:00:00"), new Date("2000/01/01 08:00:00"));
+// function myFunction(a) {
+//   console.log(a.toString().split(""));
+// }
+// myFunction(1.123);
+// function myFunction(arr) {
+//   let dscN = arr.sort((f, s) => s - f);
+//   console.log(dscN);
+// }
+// myFunction([1, 3, 2]);
+// function myFunction(arr) {
+//   let summation = arr.reduce(
+//     (accumulator, currentValue) => accumulator + currentValue
+//   );
+//   console.log(summation / 3);
+// }
+// myFunction([10, 100, 40]);
+// function myFunction(a, b) {
+// console.log(Date.now(a));
+// console.log(getDay());
+
+//   var day = b * 24 * 60 * 60 * 1000;
+//   console.log(a.getTime());
+// }
+// myFunction(new Date(Date.UTC(2000, 01, 01)), 31);
+
+// function myFunction(a, b) {
+//   let sum = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] > b) {
+//       sum += a[i];
+//     }
+//   }
+//   console.log(sum);
+// }
+// myFunction([78, 99, 100, 101, 401], 99);
