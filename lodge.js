@@ -1616,8 +1616,8 @@
 // }
 
 // myFunction([true, true], [1, 2], ["a", "b"]);
-function myFunction(a, b) {
-  console.log(b.split(a).length - 1);
-  console.log(b.split(a).length - 1);
-}
-myFunction("h", "how many times does the character occur in this sentence?");
+// function myFunction(a, b) {
+//   console.log(b.split(a).length - 1);
+//   console.log(b.split(a).length - 1);
+// }
+// myFunction("h", "how many times does the character occur in this sentence?");
