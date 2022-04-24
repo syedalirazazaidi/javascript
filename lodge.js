@@ -1513,25 +1513,25 @@
 //   set1;
 // }
 // myFunction(1, "b", 3);
-function myFunction(obj) {
-  // console.log(obj.hasOwnProperty("b")); // true
-  // delete obj.b;
-  // console.log(obj.hasOwnProperty("b"));
-  // console.log(obj);
+// function myFunction(obj) {
+// console.log(obj.hasOwnProperty("b")); // true
+// delete obj.b;
+// console.log(obj.hasOwnProperty("b"));
+// console.log(obj);
 
-  const { a, ...rest } = obj;
-  console.log(rest);
+// const { a, ...rest } = obj;
+// console.log(rest);
 
-  // for (const key in obj) {
-  //   console.log(key === "b");
-  //   if (key !== "b") {
-  //     console.log("hi");
-  //   }
-  // if (Object.hasOwnProperty.call(obj, key)) {
-  //   var element = obj[key];
-  // }
-  // console.log(element);
-}
+// for (const key in obj) {
+//   console.log(key === "b");
+//   if (key !== "b") {
+//     console.log("hi");
+//   }
+// if (Object.hasOwnProperty.call(obj, key)) {
+//   var element = obj[key];
+// }
+// console.log(element);
+// }
 // myFunction({ a: 1, b: 7, c: 3 });
 // function myFunction(a, b) {
 //   console.log(a.getTime() === b.getTime());
@@ -1572,3 +1572,52 @@ function myFunction(obj) {
 //   console.log(sum);
 // }
 // myFunction([78, 99, 100, 101, 401], 99);
+// function myFunction(arr) {
+//   // console.log(Object.values(arr));
+//   var newObj = arr.sort((a, b) => {
+//     return a.a - b.b;
+//   });
+//   console.log(newObj);
+// }
+// myFunction([
+//   { a: 1, b: 2 },
+//   { a: 5, b: 4 },
+// ]);
+
+// function myFunction(arr) {
+//   console.log(arr);
+//   arr.sort((x, y) => {
+//     console.log(x, "X", y, "Y");
+//     return x.b - y.b;
+//   });
+//   console.log(arr);
+
+//   //   function myFunction(arr) {
+//   //     const sort = (x, y) => x.b - y.b;
+//   //     return arr.sort(sort);
+//   //  }
+// }
+// console.log(
+//   myFunction([
+//     { a: 2, b: 10 },
+//     { a: 5, b: 4 },
+//   ])
+// );
+
+// function myFunction(...arrays) {
+//   console.log(arrays.flat());
+
+//   if (arrays.length === 2) {
+//     return arrays[0].concat(arrays[1]);
+//   } else if (arrays.length === 3) {
+//     newarray = arrays[0].concat(arrays[1]);
+//     return newarray.concat(arrays[2]);
+//   }
+// }
+
+// myFunction([true, true], [1, 2], ["a", "b"]);
+function myFunction(a, b) {
+  console.log(b.split(a).length - 1);
+  console.log(b.split(a).length - 1);
+}
+myFunction("h", "how many times does the character occur in this sentence?");
