@@ -1621,3 +1621,49 @@
 //   console.log(b.split(a).length - 1);
 // }
 // myFunction("h", "how many times does the character occur in this sentence?");
+// function myFunction(set, arr) {
+//   const seta = new Set();
+//   arr.forEach((el) => {
+//     return set.has(el) && seta.add(el);
+//   });
+//   console.log(seta);
+// const newSet = new Set([...set, ...arr]);
+// console.log(newSet);
+// var result = arr.forEach((element) => {
+//   return set.add(element);
+// });
+// console.log(result, "RESULT");
+// console.log([set, arr]);
+// }
+// myFunction(new Set("12345"), [..."6789"]);
+
+// function myFunction(set, arr) {
+//   arr.forEach((el) => set.add(el));
+//   return set;
+// }
+// console.log(myFunction(new Set("12345"), new Set([..."6789"]))); // new Set('45')
+// function myFunction(a) {
+//   console.log(a.toFixed(2));
+// }
+// myFunction(26.1379);
+// function myFunction(a, b) {
+//   const result = new Set(a);
+//   console.log(result);
+//   b.forEach((el) => a.add(el));
+//   console.log(result);
+// }
+// myFunction(new Set("1323"), new Set("234"));
+function myFunction(arr) {
+  // console.log(arr[0].length);
+  var len = 0;
+  var str = "";
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > len) {
+      len = arr[i].length;
+      str = arr[i];
+    }
+  }
+  console.log(len);
+  console.log(str);
+}
+myFunction(["I", "need", "candy"]);
