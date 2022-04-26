@@ -1681,12 +1681,39 @@
 //   "Asia"
 // );
 
-function myFunction(arr, num) {
-  var newarr = num < 6 ? [0, ...arr] : [num, ...arr];
-  // if (num < 6) {
-  //   [num, ...arr];
-  // }
-  // e
-  console.log(newarr);
+// function myFunction(arr, num) {
+//   var newarr = num < 6 ? [0, ...arr] : [num, ...arr];
+//   if (num < 6) {
+//     [num, ...arr];
+//   }
+//   e
+//   console.log(newarr);
+// }
+// myFunction(["a", "b"], 2);
+
+// function myFunction(a, b) {
+//   var newvalu = [...new Set([...a, ...b])].sort((a, b) => {
+//     return a - b;
+//   });
+//   console.log(newvalu);
+//   var priceList = [1000, 50, 2, 7, 14];
+//   console.log(
+//     priceList.sort((a, b) => {
+//       return a - b;
+//     })
+//   );
+// }
+// myFunction([-10, 22, 333, 42], [-11, 5, 22, 41, 42]);
+function myFunction(a) {
+  var result = a
+    .toString()
+    .split("")
+    .map((str) => Number(str));
+  // const newNumb = result.map((str) => {
+  //   return Number(str);
+  // });
+  console.log(result);
+  const string = a + "";
+  console.log(string);
 }
-myFunction(["a", "b"], 2);
+myFunction(193278);
