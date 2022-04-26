@@ -1653,17 +1653,40 @@
 //   console.log(result);
 // }
 // myFunction(new Set("1323"), new Set("234"));
-function myFunction(arr) {
-  // console.log(arr[0].length);
-  var len = 0;
-  var str = "";
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length > len) {
-      len = arr[i].length;
-      str = arr[i];
-    }
-  }
-  console.log(len);
-  console.log(str);
+// function myFunction(arr) {
+//   // console.log(arr[0].length);
+//   var len = 0;
+//   var str = "";
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length > len) {
+//       len = arr[i].length;
+//       str = arr[i];
+//     }
+//   }
+//   console.log(len);
+//   console.log(str);
+// }
+// myFunction(["I", "need", "candy"]);
+// function myFunction(arr, str) {
+//   arr.forEach(function (element) {
+//     element.continent = str;
+//   });
+//   console.log(arr);
+// }
+// myFunction(
+//   [
+//     { city: "Tokyo", country: "Japan" },
+//     { city: "Bangkok", country: "Thailand" },
+//   ],
+//   "Asia"
+// );
+
+function myFunction(arr, num) {
+  var newarr = num < 6 ? [0, ...arr] : [num, ...arr];
+  // if (num < 6) {
+  //   [num, ...arr];
+  // }
+  // e
+  console.log(newarr);
 }
-myFunction(["I", "need", "candy"]);
+myFunction(["a", "b"], 2);
