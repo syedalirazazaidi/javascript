@@ -1896,23 +1896,111 @@ function myFunction(a, b) {
 // for (let i = 0; i < arr.length; i++) {
 //   console.log(arr[i]);
 // }
-const countingChars = (str) => {
-  const charCount = {}; //Step 0
-  let maxCharCount = 0;
-  let maxChar = "";
-  for (let i = 0; i < str.length; i++) {
-    // Step 1.
-    charCount[str[i]] = ++charCount[str[i]] || 1;
-  }
-  console.log(charCount);
-  for (let key in charCount) {
-    //Step 2
-    if (charCount[key] >= maxCharCount) {
-      maxCharCount = charCount[key]; //Step 3
-      maxChar = key;
-    }
-  }
+// const countingChars = (str) => {
+//   const charCount = {}; //Step 0
+//   let maxCharCount = 0;
+//   let maxChar = "";
+//   for (let i = 0; i < str.length; i++) {
+//     // Step 1.
+//     charCount[str[i]] = ++charCount[str[i]] || 1;
+//   }
+//   console.log(charCount);
+//   for (let key in charCount) {
+//     //Step 2
+//     if (charCount[key] >= maxCharCount) {
+//       maxCharCount = charCount[key]; //Step 3
+//       maxChar = key;
 
-  return maxChar, maxCharCount; //Step 4
-};
-console.log(countingChars("aliiiiiirazaaa"));
+//     }
+//   }
+
+//   return maxChar, maxCharCount; //Step 4
+// };
+// console.log(countingChars("aliiiiiirazaaa"));
+
+// function myFunction(x, y) {
+//   for (const keyx in x) {
+//     for (const keyy in y) {
+//       if (keyx === keyy) {
+//         const d = y[keyy] || keyy;
+//         console.log(d);
+//         // return { [d]: y[keyy] };
+//         console.log({ [d]: y[keyy] });
+//       }
+//     }
+//   }
+//   console.log(Object.assign({}, ...x));
+// }
+// myFunction({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 });
+// const objA = { x: "1", y: "2", z: "3" };
+// const objB = { a: "4", z: "newValue", c: "6" };
+
+// Object.keys(objA).forEach((key) => {
+//   if (key in objB) {
+//     objA["d"] = objB[key];
+//   }
+// });
+
+// console.log(objA);
+// function myFunction(x, y) {
+//   var newobj = {};
+//   Object.keys(x).forEach((key) => {
+//     if (key in y) {
+//       console.log(key);
+//       y["d"] = y[key];
+//     }
+//   });
+//   let allObj = {
+//     ...y,
+//     ...x,
+//   };
+//   console.log(allObj);
+// }
+// myFunction({ a: 5, b: 4 }, { c: 3, b: 1, e: 2 });
+// ("AUTHER SOLUTION");
+// function myFunction(x, y) {
+//   const { b, ...rest } = y;
+//   console.log(y);
+//   return { ...x, ...rest, d: b };
+// }
+// myFunction({ a: 5, b: 4 }, { c: 3, b: 1, e: 2 });
+// function myFunction(arr) {
+// return arr.reduce((acc, cur) => {
+//   const firstLetter = cur.toLowerCase().charAt(0);
+//   return { ...acc, [firstLetter]: [...(acc[firstLetter] || []), cur] };
+// }, {});
+//   const result = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     const item = arr[i];
+
+//     const firstLetter = item[0].toLowerCase();
+
+//     if (!result[firstLetter]) {
+//       result[firstLetter] = [];
+//     }
+
+//     if (result[firstLetter].indexOf(item) < 0) {
+//       result[firstLetter].push(item);
+//     }
+//   }
+//   console.log(result);
+// }
+// myFunction(["Berlin", "Paris", "Prague"]);
+// function myFunction(a) {
+//   const counts = {};
+
+//   for (const num of a) {
+//     counts[num] = counts[num] ? counts[num] + 1 : 1;
+//   }
+//   console.log(counts);
+// }
+// myFunction([9, 9, 9, 99]);
+function myFunction(str) {
+  var newstr = "";
+  for (let i = 0; i < str.length; i++) {
+    var expstr = String.fromCharCode(str.charCodeAt(i) + 1);
+    newstr += expstr;
+  }
+  console.log(newstr);
+}
+myFunction("sdrshmf");
