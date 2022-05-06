@@ -1704,16 +1704,215 @@
 //   );
 // }
 // myFunction([-10, 22, 333, 42], [-11, 5, 22, 41, 42]);
-function myFunction(a) {
-  var result = a
-    .toString()
-    .split("")
-    .map((str) => Number(str));
-  // const newNumb = result.map((str) => {
-  //   return Number(str);
-  // });
-  console.log(result);
-  const string = a + "";
-  console.log(string);
+// function myFunction(a) {
+//   var result = a
+//     .toString()
+//     .split("")
+//     .map((str) => Number(str));
+//   // const newNumb = result.map((str) => {
+//   //   return Number(str);
+//   // });
+//   console.log(result);
+//   const string = a + "";
+//   console.log(string);
+// }
+// myFunction(193278);
+
+// function myFunction(a, b) {
+//   var c = b - a;
+//   console.log(c <= 3600000 ? true : false);
+// }
+// myFunction(new Date("2000/01/01 09:00:00"), new Date("2000/01/01 08:45:00"));
+// function myFunction(obj) {
+//   console.log(obj);
+//   const newObj = { ...obj };
+//   console.log(newObj);
+//   for (key in newObj) {
+//     console.log(key);
+//     if (newObj[key].trim() === "") newObj[key] = null;
+//   }
+//   console.log(newObj);
+// }
+// myFunction({ a: "a", b: "b", c: "" });
+
+// function myFunction(min, max) {
+//   var newarr = [];
+//   for (let i = min; i <= max; i++) {
+//     newarr.push(i);
+//   }
+//   console.log(newarr);
+// }
+// myFunction(2, 10);
+// function myFunction(arr) {
+//   return;
+// }
+// function myFunction(arr) {
+//   console.log(new Set(arr).size === 1);
+// }
+// console.log(myFunction([1, 1, 1, 2]));
+// function myFunction(a, b) {
+//   c = a > b ? a - b : b - a;
+//   var d = c / 60000 / 60 / 24;
+//   console.log(d);
+// }
+// myFunction(new Date("2000-01-01"), new Date("2020-06-01"));
+// const myLifeSummedUp = ["☕", "💻", "🍷", "🍫",""];
+
+// for (let item in myLifeSummedUp) {
+//   console.log(item);
+// }
+
+// for (let item of myLifeSummedUp) {
+//   console.log(item);
+// }
+// function myFunction(a, b) {
+//   // var newobj = Object.values(a).map((valu) => valu * b);
+//   console.log(a["j"]);
+
+// var newobj = {};
+// for (var obj in a) {
+//   obj, ":", a[obj] * b;
+//   ne["prop"] = a;
+// }
+// console.log(newobj);
+// }
+function myFunction(a, b) {
+  // var newObj = {};
+  // const keys = Object.keys(object);
+  // console.log(keys);
+  // for (const key of keys) {
+  //   console.log(key);
+  //   if (typeof object[key] !== "string") {
+  //     console.log(object, ">>>");
+  //     newObj[key] = object[key] * b;
+  //     continue;
+  //   }
+  //   // newObj[key] = object[key].toLowerCase();
+  // }
+  // return newObj;
+  // return Object.entries(a).reduce((acc, [key, val]) => {
+  //   console.log(acc, "ACC", [key], ":", val * b, "multi");
+  //   return { ...acc, [key]: val * b };
+  // }, {});
+  // for (const key in a) {
+  //   const element = [key];
+  //   console.log(element);
+  // }
 }
-myFunction(193278);
+// myFunction({ j: 9, i: 2, x: 3, z: 4 }, 10);
+// let numbers = [1, 2, 3, 3];
+// let sum = numbers.reduce(function (previousValue, currentValue) {
+//   return previousValue * currentValue;
+// });
+
+// console.log(sum);
+// function myFunction(a, b) {
+//   // console.log(Object.assign(x, y));
+//   // console.log(Object.keys(a));
+//   Object.keys(a).forEach(function (key) {
+//     console.log(b[key]);
+//     if (a[key] === b[key]) {
+//       console.log(b);
+//     }
+//     // a[key] = a[key] ?? b[key];
+//   });
+// console.log(a);
+// const keys1 = Object.keys(x);
+// const keys2 = Object.keys(y);
+// console.log(keys1);
+// for (let key of keys1) {
+//   if (object1[key] !== object2[key]) {
+//     return false;
+//   }
+// }
+// Object.keys(a)===Object.keys(b)
+// }
+// myFunction({ a: 1, b: 2 }, { a: 2, c: 3, e: 5 });
+// function myFunction(obj) {
+//   var newObj = {
+//     fn: obj["fn"],
+//     ln: obj["ln"],
+//     size: obj["size"] + "cm",
+//     weight: obj["weight"] + "kg",
+//   };
+
+//   console.log({ size: `${obj.size}cm` });
+//   console.log(obj, newObj);
+// }
+
+// myFunction({ fn: "Lisa", ln: "Müller", age: 17, size: 175, weight: 67 });
+// function myFunction(a, b) {
+//   // const intersection = new Set([...a].filter((element) => b.has(element)));
+//   // console.log(intersection);
+//   const int = new Set();
+//   a.forEach((el) => b.has(el) && int.add(el));
+//   console.log(int);
+// }
+// myFunction(new Set([1, 2, 3]), new Set([4, 5, 6]));
+// function myFunction(x, y) {
+//   // var numb = x % y == 0 && x;
+//   // console.log(numb);
+//   // for()
+//   if (x % y == 0) {
+//     console.log(x);
+//   } else {
+//     for (let i = 0; i <= y; i++) {
+//       if (i % y == 0) {
+//         console.log(i);
+//       }
+//     }
+//   }
+// }
+// myFunction(-5, 7);
+
+// function myFunction(x, y) {
+//   const newobj = Object.assign({}, x, y);
+//   console.log(newobj);
+// }
+// myFunction({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 });
+
+// Try it out yourself here before checking the solution!
+// Initialize and Declare Variable for Longest String
+// Loop through the array
+// Find the length of each string
+// Determine if that length is the largest we have seen so far.
+// Replace the longest/largest variable with the arr[index] as long as length is greater than the variable.
+// Return longest/largest string.
+// var arr = ["ali", "raza", "zaidi", "aaaaaaa"];
+// var sumlen = 0;
+// var arr2 = "";
+// for (var i = 0; i < arr.length; i++) {
+//   if (arr[i].length > sumlen) {
+//     arr2 = arr[i];
+//     sumlen = arr[i].length;
+//   }
+// }
+// console.log(arr2, sumlen);
+// var str = "aliraza";
+// var maxchar = 0;
+// var newstr = "";
+// var arr = str.split("");
+
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+const countingChars = (str) => {
+  const charCount = {}; //Step 0
+  let maxCharCount = 0;
+  let maxChar = "";
+  for (let i = 0; i < str.length; i++) {
+    // Step 1.
+    charCount[str[i]] = ++charCount[str[i]] || 1;
+  }
+
+  for (let key in charCount) {
+    //Step 2
+    if (charCount[key] >= maxCharCount) {
+      maxCharCount = charCount[key]; //Step 3
+      maxChar = key;
+    }
+  }
+
+  return maxChar; //Step 4
+};
+console.log(countingChars("aliiiiiirazaaa"));
