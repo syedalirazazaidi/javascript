@@ -1904,7 +1904,7 @@ const countingChars = (str) => {
     // Step 1.
     charCount[str[i]] = ++charCount[str[i]] || 1;
   }
-
+  console.log(charCount);
   for (let key in charCount) {
     //Step 2
     if (charCount[key] >= maxCharCount) {
@@ -1913,6 +1913,6 @@ const countingChars = (str) => {
     }
   }
 
-  return maxChar; //Step 4
+  return maxChar, maxCharCount; //Step 4
 };
 console.log(countingChars("aliiiiiirazaaa"));
