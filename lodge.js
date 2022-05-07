@@ -1995,12 +1995,40 @@ function myFunction(a, b) {
 //   console.log(counts);
 // }
 // myFunction([9, 9, 9, 99]);
-function myFunction(str) {
-  var newstr = "";
-  for (let i = 0; i < str.length; i++) {
-    var expstr = String.fromCharCode(str.charCodeAt(i) + 1);
-    newstr += expstr;
-  }
-  console.log(newstr);
+// function myFunction(str) {
+//   var newstr = "";
+//   for (let i = 0; i < str.length; i++) {
+//     var expstr = String.fromCharCode(str.charCodeAt(i) + 1);
+//     newstr += expstr;
+//   }
+//   console.log(newstr);
+// }
+// myFunction("sdrshmf");
+// function myFunction(obj) {
+//   let newObj = {};
+
+//   Object.keys(obj).forEach((key) => {
+//     newObj[obj[key]] = key;
+//     console.log(newObj[obj[key]]);
+//   });
+//   console.log(newObj);
+// }
+// myFunction({ 2: "a", 4: "b", 6: "c", 8: "d" });
+// function myFunction(a, n) {
+//   var newval = a.filter((e, i) => i % n === n - 1);
+//   console.log(newval);
+// }
+// myFunction([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 3);
+function myFunction(a, b) {
+  // var newa =
+  //   a.split("").slice(0, 1).join("").toUpperCase() +
+  //   a.slice(1).replace(/%/g, "");
+
+  // var b = b.split("").reverse().join("").replace(/%/g, "");
+  // return newa + b;
+  const func = (x) => x.replace("%", "");
+  const first = func(a);
+  const second = func(b).split("").reverse().join("");
+  return first.charAt(0).toUpperCase() + first.slice(1) + second;
 }
-myFunction("sdrshmf");
+myFunction("java", "tpi%rcs");
